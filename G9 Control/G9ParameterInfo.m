@@ -293,22 +293,6 @@
 		}
 	}
 	
-	else if ([[moduleName substringToIndex:5] isEqualToString:MODULE_PEDAL])
-	{
-		if (parameter == 1) { // Target for expression pedal
-			range = [[G9RangeDomain alloc] initWithMinimum:CONTROL_NOT_ASSIGNED andMaximum:CONTROL_MAX];
-		}
-		else if (parameter == 2) { // Minimum value when pedal up
-			// Depends on the target
-		}
-		else if (parameter == 3) { // Maximum value when pedal down
-			// Depends on the target
-		}
-		else if (parameter == 4) { // Module on/off function
-			
-		}
-	}
-	
 	else if ([moduleName isEqualToString:MODULE_ARRM])
 	{
 		if (parameter == 1) { // Target for ARRM
@@ -340,6 +324,22 @@
 				[syncDomain addValue:[[G9Value alloc] initWithValue:i andLabel:[NSString stringWithFormat:@"1/4 x %ld", i]]];
 			}
 			range = syncDomain;
+		}
+	}
+	
+	else if ([[moduleName substringToIndex:5] isEqualToString:MODULE_PEDAL])
+	{
+		if (parameter == 1) { // Target for expression pedal
+			range = [[G9RangeDomain alloc] initWithMinimum:CONTROL_NOT_ASSIGNED andMaximum:CONTROL_MAX];
+		}
+		else if (parameter == 2) { // Minimum value when pedal up
+			// Depends on the target
+		}
+		else if (parameter == 3) { // Maximum value when pedal down
+			// Depends on the target
+		}
+		else if (parameter == 4) { // Module on/off function
+			
 		}
 	}
 	
