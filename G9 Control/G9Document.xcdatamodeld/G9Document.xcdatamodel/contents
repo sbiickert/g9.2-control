@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="13B42" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="G9Patch" representedClassName="G9Patch" syncable="YES">
+        <attribute name="ampA" attributeType="Transformable" syncable="YES"/>
+        <attribute name="ampB" attributeType="Transformable" syncable="YES"/>
+        <attribute name="ampSelection" attributeType="Integer 16" minValueString="0" maxValueString="1" defaultValueString="0" syncable="YES"/>
+        <attribute name="arrm" attributeType="Transformable" syncable="YES"/>
+        <attribute name="cab" attributeType="Transformable" syncable="YES"/>
+        <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="comp" attributeType="Transformable" syncable="YES"/>
+        <attribute name="delay" attributeType="Transformable" syncable="YES"/>
+        <attribute name="eqA" attributeType="Transformable" syncable="YES"/>
+        <attribute name="eqB" attributeType="Transformable" syncable="YES"/>
+        <attribute name="extLoop" attributeType="Transformable" syncable="YES"/>
+        <attribute name="mod" attributeType="Transformable" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="patchBank" attributeType="String" minValueString="2" maxValueString="2" regularExpressionString="[Uu]\d" syncable="YES"/>
+        <attribute name="patchIndex" attributeType="Integer 16" minValueString="1" maxValueString="5" defaultValueString="1" syncable="YES"/>
+        <attribute name="patchLevel" optional="YES" attributeType="Integer 16" minValueString="0" maxValueString="100" defaultValueString="80" syncable="YES"/>
+        <attribute name="pedal1v1" attributeType="Transformable" syncable="YES"/>
+        <attribute name="pedal1v2" attributeType="Transformable" syncable="YES"/>
+        <attribute name="pedal1v3" attributeType="Transformable" syncable="YES"/>
+        <attribute name="pedal1v4" attributeType="Transformable" syncable="YES"/>
+        <attribute name="pedal2h1" attributeType="Transformable" syncable="YES"/>
+        <attribute name="pedal2h2" attributeType="Transformable" syncable="YES"/>
+        <attribute name="pedal2h3" attributeType="Transformable" syncable="YES"/>
+        <attribute name="pedal2h4" attributeType="Transformable" syncable="YES"/>
+        <attribute name="pedal2v1" attributeType="Transformable" syncable="YES"/>
+        <attribute name="pedal2v2" attributeType="Transformable" syncable="YES"/>
+        <attribute name="pedal2v3" attributeType="Transformable" syncable="YES"/>
+        <attribute name="pedal2v4" attributeType="Transformable" syncable="YES"/>
+        <attribute name="reverb" attributeType="Transformable" syncable="YES"/>
+        <attribute name="total" attributeType="Transformable" syncable="YES"/>
+        <attribute name="wah" attributeType="Transformable" syncable="YES"/>
+        <attribute name="znrA" attributeType="Transformable" syncable="YES"/>
+        <attribute name="znrB" attributeType="Transformable" syncable="YES"/>
+        <relationship name="patchSet" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="G9PatchSet" inverseName="patches" inverseEntity="G9PatchSet" syncable="YES"/>
+    </entity>
+    <entity name="G9PatchSet" representedClassName="G9PatchSet" syncable="YES">
+        <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="patches" optional="YES" toMany="YES" minCount="100" maxCount="100" deletionRule="Cascade" destinationEntity="G9Patch" inverseName="patchSet" inverseEntity="G9Patch" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="G9PatchSet" positionX="18" positionY="90" width="128" height="88"/>
+        <element name="G9Patch" positionX="225" positionY="-27" width="128" height="553"/>
+    </elements>
+</model>

@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  G9 Control
+
+  Created by Simon Biickert on 12/2/2013.
+  Copyright (c) 2013 Simon Biickert. All rights reserved.
+*/
+
+"ON" = "On";
+"OFF" = "Off";

@@ -1,0 +1,775 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F41611AA18C37EC3009D7125 /* G9ZnrModuleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F41611A918C37EC3009D7125 /* G9ZnrModuleView.xib */; };
+		F41611AC18C37F4C009D7125 /* G9ModModuleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F41611AB18C37F4C009D7125 /* G9ModModuleView.xib */; };
+		F41611AE18C37FDF009D7125 /* G9ReverbModuleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F41611AD18C37FDF009D7125 /* G9ReverbModuleView.xib */; };
+		F41611B018C380EB009D7125 /* G9DelayModuleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F41611AF18C380EB009D7125 /* G9DelayModuleView.xib */; };
+		F41611B218C3CE94009D7125 /* G9AmpModuleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F41611B118C3CE94009D7125 /* G9AmpModuleView.xib */; };
+		F41611B418C3D357009D7125 /* G9ModuleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F41611B318C3D357009D7125 /* G9ModuleView.xib */; };
+		F41611B718C3D440009D7125 /* G9EqModuleView.m in Sources */ = {isa = PBXBuildFile; fileRef = F41611B618C3D440009D7125 /* G9EqModuleView.m */; };
+		F42A073718C2D2BB002D68C4 /* G9WahModuleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F42A073618C2D2BB002D68C4 /* G9WahModuleView.xib */; };
+		F42A073C18C2DE4B002D68C4 /* G9CompModuleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F42A073B18C2DE4B002D68C4 /* G9CompModuleView.xib */; };
+		F43C4B01187857AE00CF785D /* G9Module.m in Sources */ = {isa = PBXBuildFile; fileRef = F43C4B00187857AE00CF785D /* G9Module.m */; };
+		F45B549A1869D37600392AC2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F45B54991869D37600392AC2 /* Cocoa.framework */; };
+		F45B54A41869D37600392AC2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F45B54A21869D37600392AC2 /* InfoPlist.strings */; };
+		F45B54A61869D37600392AC2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F45B54A51869D37600392AC2 /* main.m */; };
+		F45B54AA1869D37600392AC2 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F45B54A81869D37600392AC2 /* Credits.rtf */; };
+		F45B54AD1869D37600392AC2 /* G9Document.m in Sources */ = {isa = PBXBuildFile; fileRef = F45B54AC1869D37600392AC2 /* G9Document.m */; };
+		F45B54B01869D37600392AC2 /* G9Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = F45B54AE1869D37600392AC2 /* G9Document.xib */; };
+		F45B54B31869D37600392AC2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F45B54B11869D37600392AC2 /* MainMenu.xib */; };
+		F45B54B61869D37600392AC2 /* G9Document.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F45B54B41869D37600392AC2 /* G9Document.xcdatamodeld */; };
+		F45B54B81869D37600392AC2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F45B54B71869D37600392AC2 /* Images.xcassets */; };
+		F45B54BF1869D37600392AC2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F45B54BE1869D37600392AC2 /* XCTest.framework */; };
+		F45B54C01869D37600392AC2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F45B54991869D37600392AC2 /* Cocoa.framework */; };
+		F45B54C81869D37600392AC2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F45B54C61869D37600392AC2 /* InfoPlist.strings */; };
+		F45B54D61869D40300392AC2 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = F45B54D51869D40300392AC2 /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F45B54D81869D41200392AC2 /* FactoryPatches.xml in Resources */ = {isa = PBXBuildFile; fileRef = F45B54D71869D41200392AC2 /* FactoryPatches.xml */; };
+		F45B54DC1869D45900392AC2 /* G9ParameterInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F45B54DB1869D45900392AC2 /* G9ParameterInfo.m */; };
+		F45B54E21869D46A00392AC2 /* G9Setting.m in Sources */ = {isa = PBXBuildFile; fileRef = F45B54E01869D46A00392AC2 /* G9Setting.m */; };
+		F45B54E91869D48B00392AC2 /* G9RangeDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = F45B54E41869D48B00392AC2 /* G9RangeDomain.m */; };
+		F45B54EA1869D48B00392AC2 /* G9Value.m in Sources */ = {isa = PBXBuildFile; fileRef = F45B54E61869D48B00392AC2 /* G9Value.m */; };
+		F45B54EB1869D48B00392AC2 /* G9ValueDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = F45B54E81869D48B00392AC2 /* G9ValueDomain.m */; };
+		F45B54EE1869D49B00392AC2 /* G9XexTranslator.m in Sources */ = {isa = PBXBuildFile; fileRef = F45B54ED1869D49B00392AC2 /* G9XexTranslator.m */; };
+		F45B54F11869D4CA00392AC2 /* G9ParameterInfoTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F45B54EF1869D4CA00392AC2 /* G9ParameterInfoTestCase.m */; };
+		F45B54F21869D4CA00392AC2 /* G9XexTranslatorTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F45B54F01869D4CA00392AC2 /* G9XexTranslatorTestCase.m */; };
+		F45B54F51869D50800392AC2 /* Descriptions.strings in Resources */ = {isa = PBXBuildFile; fileRef = F45B54F31869D50800392AC2 /* Descriptions.strings */; };
+		F45B54F61869D50800392AC2 /* Names.strings in Resources */ = {isa = PBXBuildFile; fileRef = F45B54F41869D50800392AC2 /* Names.strings */; };
+		F45B54F91869D56400392AC2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F45B54F81869D56400392AC2 /* Localizable.strings */; };
+		F45B55021869DC0900392AC2 /* G9PatchSet.m in Sources */ = {isa = PBXBuildFile; fileRef = F45B55011869DC0900392AC2 /* G9PatchSet.m */; };
+		F45B55051869DC7700392AC2 /* G9PatchSet+Access.m in Sources */ = {isa = PBXBuildFile; fileRef = F45B55041869DC7700392AC2 /* G9PatchSet+Access.m */; };
+		F45B55081869DC8A00392AC2 /* G9Patch+Access.m in Sources */ = {isa = PBXBuildFile; fileRef = F45B55071869DC8A00392AC2 /* G9Patch+Access.m */; };
+		F45B550E186F933800392AC2 /* G9PatchArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = F45B550D186F933800392AC2 /* G9PatchArrayController.m */; };
+		F45B5511186F947500392AC2 /* G9Patch.m in Sources */ = {isa = PBXBuildFile; fileRef = F45B5510186F947500392AC2 /* G9Patch.m */; };
+		F45B5515186FA34800392AC2 /* G9ModuleView.m in Sources */ = {isa = PBXBuildFile; fileRef = F45B5514186FA34800392AC2 /* G9ModuleView.m */; };
+		F46DB90B18C64862001BF693 /* G9NumberStringTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = F46DB90A18C64862001BF693 /* G9NumberStringTransformer.m */; };
+		F479EED6187DAFD00095CF77 /* 4x4_256.png in Resources */ = {isa = PBXBuildFile; fileRef = F479EED5187DAFD00095CF77 /* 4x4_256.png */; };
+		F4C0730C18C22FF900BEA5E2 /* G9GenericModuleView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C0730B18C22FF900BEA5E2 /* G9GenericModuleView.m */; };
+		F4D4FAAE18C791420025F00E /* G9ModuleArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D4FAAD18C791420025F00E /* G9ModuleArrayController.m */; };
+		F4EFC85D18C141E800E64EAC /* G9ModuleCollectionViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EFC85C18C141E800E64EAC /* G9ModuleCollectionViewItem.m */; };
+		F4EFC85F18C142E100E64EAC /* G9EqModuleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4EFC85E18C142E100E64EAC /* G9EqModuleView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F45B54C11869D37600392AC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F45B548E1869D37600392AC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F45B54951869D37600392AC2;
+			remoteInfo = "G9 Control";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F41611A918C37EC3009D7125 /* G9ZnrModuleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = G9ZnrModuleView.xib; sourceTree = "<group>"; };
+		F41611AB18C37F4C009D7125 /* G9ModModuleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = G9ModModuleView.xib; sourceTree = "<group>"; };
+		F41611AD18C37FDF009D7125 /* G9ReverbModuleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = G9ReverbModuleView.xib; sourceTree = "<group>"; };
+		F41611AF18C380EB009D7125 /* G9DelayModuleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = G9DelayModuleView.xib; sourceTree = "<group>"; };
+		F41611B118C3CE94009D7125 /* G9AmpModuleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = G9AmpModuleView.xib; sourceTree = "<group>"; };
+		F41611B318C3D357009D7125 /* G9ModuleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = G9ModuleView.xib; sourceTree = "<group>"; };
+		F41611B518C3D440009D7125 /* G9EqModuleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G9EqModuleView.h; sourceTree = "<group>"; };
+		F41611B618C3D440009D7125 /* G9EqModuleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G9EqModuleView.m; sourceTree = "<group>"; };
+		F42A073618C2D2BB002D68C4 /* G9WahModuleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = G9WahModuleView.xib; sourceTree = "<group>"; };
+		F42A073B18C2DE4B002D68C4 /* G9CompModuleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = G9CompModuleView.xib; sourceTree = "<group>"; };
+		F43C4AFF187857AE00CF785D /* G9Module.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G9Module.h; sourceTree = "<group>"; };
+		F43C4B00187857AE00CF785D /* G9Module.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G9Module.m; sourceTree = "<group>"; };
+		F45B54961869D37600392AC2 /* G9 Control.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "G9 Control.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F45B54991869D37600392AC2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F45B549C1869D37600392AC2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		F45B549D1869D37600392AC2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F45B549E1869D37600392AC2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F45B54A11869D37600392AC2 /* G9 Control-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "G9 Control-Info.plist"; sourceTree = "<group>"; };
+		F45B54A31869D37600392AC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F45B54A51869D37600392AC2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F45B54A71869D37600392AC2 /* G9 Control-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "G9 Control-Prefix.pch"; sourceTree = "<group>"; };
+		F45B54A91869D37600392AC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		F45B54AB1869D37600392AC2 /* G9Document.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = G9Document.h; sourceTree = "<group>"; };
+		F45B54AC1869D37600392AC2 /* G9Document.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = G9Document.m; sourceTree = "<group>"; };
+		F45B54AF1869D37600392AC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/G9Document.xib; sourceTree = "<group>"; };
+		F45B54B21869D37600392AC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F45B54B51869D37600392AC2 /* G9Document.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = G9Document.xcdatamodel; sourceTree = "<group>"; };
+		F45B54B71869D37600392AC2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F45B54BD1869D37600392AC2 /* G9 ControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "G9 ControlTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F45B54BE1869D37600392AC2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F45B54C51869D37600392AC2 /* G9 ControlTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "G9 ControlTests-Info.plist"; sourceTree = "<group>"; };
+		F45B54C71869D37600392AC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F45B54D41869D40300392AC2 /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		F45B54D51869D40300392AC2 /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		F45B54D71869D41200392AC2 /* FactoryPatches.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = FactoryPatches.xml; sourceTree = "<group>"; };
+		F45B54DA1869D45900392AC2 /* G9ParameterInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G9ParameterInfo.h; sourceTree = "<group>"; };
+		F45B54DB1869D45900392AC2 /* G9ParameterInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G9ParameterInfo.m; sourceTree = "<group>"; };
+		F45B54DF1869D46A00392AC2 /* G9Setting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G9Setting.h; sourceTree = "<group>"; };
+		F45B54E01869D46A00392AC2 /* G9Setting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G9Setting.m; sourceTree = "<group>"; };
+		F45B54E31869D48B00392AC2 /* G9RangeDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G9RangeDomain.h; sourceTree = "<group>"; };
+		F45B54E41869D48B00392AC2 /* G9RangeDomain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G9RangeDomain.m; sourceTree = "<group>"; };
+		F45B54E51869D48B00392AC2 /* G9Value.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G9Value.h; sourceTree = "<group>"; };
+		F45B54E61869D48B00392AC2 /* G9Value.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G9Value.m; sourceTree = "<group>"; };
+		F45B54E71869D48B00392AC2 /* G9ValueDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G9ValueDomain.h; sourceTree = "<group>"; };
+		F45B54E81869D48B00392AC2 /* G9ValueDomain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G9ValueDomain.m; sourceTree = "<group>"; };
+		F45B54EC1869D49B00392AC2 /* G9XexTranslator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G9XexTranslator.h; sourceTree = "<group>"; };
+		F45B54ED1869D49B00392AC2 /* G9XexTranslator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G9XexTranslator.m; sourceTree = "<group>"; };
+		F45B54EF1869D4CA00392AC2 /* G9ParameterInfoTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G9ParameterInfoTestCase.m; sourceTree = "<group>"; };
+		F45B54F01869D4CA00392AC2 /* G9XexTranslatorTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G9XexTranslatorTestCase.m; sourceTree = "<group>"; };
+		F45B54F31869D50800392AC2 /* Descriptions.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Descriptions.strings; sourceTree = "<group>"; };
+		F45B54F41869D50800392AC2 /* Names.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Names.strings; sourceTree = "<group>"; };
+		F45B54F81869D56400392AC2 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		F45B55001869DC0900392AC2 /* G9PatchSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G9PatchSet.h; sourceTree = "<group>"; };
+		F45B55011869DC0900392AC2 /* G9PatchSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G9PatchSet.m; sourceTree = "<group>"; };
+		F45B55031869DC7700392AC2 /* G9PatchSet+Access.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "G9PatchSet+Access.h"; sourceTree = "<group>"; };
+		F45B55041869DC7700392AC2 /* G9PatchSet+Access.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "G9PatchSet+Access.m"; sourceTree = "<group>"; };
+		F45B55061869DC8A00392AC2 /* G9Patch+Access.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "G9Patch+Access.h"; sourceTree = "<group>"; };
+		F45B55071869DC8A00392AC2 /* G9Patch+Access.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "G9Patch+Access.m"; sourceTree = "<group>"; };
+		F45B550C186F933800392AC2 /* G9PatchArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G9PatchArrayController.h; sourceTree = "<group>"; };
+		F45B550D186F933800392AC2 /* G9PatchArrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G9PatchArrayController.m; sourceTree = "<group>"; };
+		F45B550F186F947500392AC2 /* G9Patch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G9Patch.h; sourceTree = "<group>"; };
+		F45B5510186F947500392AC2 /* G9Patch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G9Patch.m; sourceTree = "<group>"; };
+		F45B5513186FA34800392AC2 /* G9ModuleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G9ModuleView.h; sourceTree = "<group>"; };
+		F45B5514186FA34800392AC2 /* G9ModuleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G9ModuleView.m; sourceTree = "<group>"; };
+		F46DB90918C64862001BF693 /* G9NumberStringTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G9NumberStringTransformer.h; sourceTree = "<group>"; };
+		F46DB90A18C64862001BF693 /* G9NumberStringTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G9NumberStringTransformer.m; sourceTree = "<group>"; };
+		F479EED5187DAFD00095CF77 /* 4x4_256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4x4_256.png; sourceTree = "<group>"; };
+		F4C0730A18C22FF900BEA5E2 /* G9GenericModuleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G9GenericModuleView.h; sourceTree = "<group>"; };
+		F4C0730B18C22FF900BEA5E2 /* G9GenericModuleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G9GenericModuleView.m; sourceTree = "<group>"; };
+		F4D4FAAC18C791420025F00E /* G9ModuleArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G9ModuleArrayController.h; sourceTree = "<group>"; };
+		F4D4FAAD18C791420025F00E /* G9ModuleArrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G9ModuleArrayController.m; sourceTree = "<group>"; };
+		F4EFC85B18C141E800E64EAC /* G9ModuleCollectionViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G9ModuleCollectionViewItem.h; sourceTree = "<group>"; };
+		F4EFC85C18C141E800E64EAC /* G9ModuleCollectionViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G9ModuleCollectionViewItem.m; sourceTree = "<group>"; };
+		F4EFC85E18C142E100E64EAC /* G9EqModuleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = G9EqModuleView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F45B54931869D37600392AC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F45B549A1869D37600392AC2 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F45B54BA1869D37600392AC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F45B54C01869D37600392AC2 /* Cocoa.framework in Frameworks */,
+				F45B54BF1869D37600392AC2 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F45B548D1869D37600392AC2 = {
+			isa = PBXGroup;
+			children = (
+				F479EED5187DAFD00095CF77 /* 4x4_256.png */,
+				F45B549F1869D37600392AC2 /* G9 Control */,
+				F45B54C31869D37600392AC2 /* G9 ControlTests */,
+				F45B54981869D37600392AC2 /* Frameworks */,
+				F45B54971869D37600392AC2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F45B54971869D37600392AC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F45B54961869D37600392AC2 /* G9 Control.app */,
+				F45B54BD1869D37600392AC2 /* G9 ControlTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F45B54981869D37600392AC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F45B54991869D37600392AC2 /* Cocoa.framework */,
+				F45B54BE1869D37600392AC2 /* XCTest.framework */,
+				F45B549B1869D37600392AC2 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F45B549B1869D37600392AC2 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F45B549C1869D37600392AC2 /* AppKit.framework */,
+				F45B549D1869D37600392AC2 /* CoreData.framework */,
+				F45B549E1869D37600392AC2 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		F45B549F1869D37600392AC2 /* G9 Control */ = {
+			isa = PBXGroup;
+			children = (
+				F46DB90818C64824001BF693 /* Value Transformers */,
+				F4EFC86018C1431000E64EAC /* XIB */,
+				F45B5512186FA30F00392AC2 /* Views */,
+				F45B54D91869D43D00392AC2 /* Data Model */,
+				F45B54D31869D3E200392AC2 /* XML Support */,
+				F45B54DA1869D45900392AC2 /* G9ParameterInfo.h */,
+				F45B54DB1869D45900392AC2 /* G9ParameterInfo.m */,
+				F45B54AB1869D37600392AC2 /* G9Document.h */,
+				F45B54AC1869D37600392AC2 /* G9Document.m */,
+				F45B54B71869D37600392AC2 /* Images.xcassets */,
+				F45B54A01869D37600392AC2 /* Supporting Files */,
+				F45B54F71869D53300392AC2 /* en.lproj */,
+				F4D4FAAB18C791120025F00E /* Controllers */,
+			);
+			path = "G9 Control";
+			sourceTree = "<group>";
+		};
+		F45B54A01869D37600392AC2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F45B54A11869D37600392AC2 /* G9 Control-Info.plist */,
+				F45B54A21869D37600392AC2 /* InfoPlist.strings */,
+				F45B54A51869D37600392AC2 /* main.m */,
+				F45B54A71869D37600392AC2 /* G9 Control-Prefix.pch */,
+				F45B54A81869D37600392AC2 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F45B54C31869D37600392AC2 /* G9 ControlTests */ = {
+			isa = PBXGroup;
+			children = (
+				F45B54EF1869D4CA00392AC2 /* G9ParameterInfoTestCase.m */,
+				F45B54F01869D4CA00392AC2 /* G9XexTranslatorTestCase.m */,
+				F45B54C41869D37600392AC2 /* Supporting Files */,
+			);
+			path = "G9 ControlTests";
+			sourceTree = "<group>";
+		};
+		F45B54C41869D37600392AC2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F45B54C51869D37600392AC2 /* G9 ControlTests-Info.plist */,
+				F45B54C61869D37600392AC2 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F45B54D31869D3E200392AC2 /* XML Support */ = {
+			isa = PBXGroup;
+			children = (
+				F45B54D71869D41200392AC2 /* FactoryPatches.xml */,
+				F45B54D41869D40300392AC2 /* GDataXMLNode.h */,
+				F45B54D51869D40300392AC2 /* GDataXMLNode.m */,
+				F45B54EC1869D49B00392AC2 /* G9XexTranslator.h */,
+				F45B54ED1869D49B00392AC2 /* G9XexTranslator.m */,
+			);
+			name = "XML Support";
+			sourceTree = "<group>";
+		};
+		F45B54D91869D43D00392AC2 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				F45B54B41869D37600392AC2 /* G9Document.xcdatamodeld */,
+				F45B550F186F947500392AC2 /* G9Patch.h */,
+				F45B5510186F947500392AC2 /* G9Patch.m */,
+				F45B55061869DC8A00392AC2 /* G9Patch+Access.h */,
+				F45B55071869DC8A00392AC2 /* G9Patch+Access.m */,
+				F45B55001869DC0900392AC2 /* G9PatchSet.h */,
+				F45B55011869DC0900392AC2 /* G9PatchSet.m */,
+				F45B55031869DC7700392AC2 /* G9PatchSet+Access.h */,
+				F45B55041869DC7700392AC2 /* G9PatchSet+Access.m */,
+				F45B54DF1869D46A00392AC2 /* G9Setting.h */,
+				F45B54E01869D46A00392AC2 /* G9Setting.m */,
+				F45B54E31869D48B00392AC2 /* G9RangeDomain.h */,
+				F45B54E41869D48B00392AC2 /* G9RangeDomain.m */,
+				F45B54E51869D48B00392AC2 /* G9Value.h */,
+				F45B54E61869D48B00392AC2 /* G9Value.m */,
+				F45B54E71869D48B00392AC2 /* G9ValueDomain.h */,
+				F45B54E81869D48B00392AC2 /* G9ValueDomain.m */,
+				F43C4AFF187857AE00CF785D /* G9Module.h */,
+				F43C4B00187857AE00CF785D /* G9Module.m */,
+			);
+			name = "Data Model";
+			sourceTree = "<group>";
+		};
+		F45B54F71869D53300392AC2 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				F45B54F81869D56400392AC2 /* Localizable.strings */,
+				F45B54F31869D50800392AC2 /* Descriptions.strings */,
+				F45B54F41869D50800392AC2 /* Names.strings */,
+			);
+			name = en.lproj;
+			sourceTree = "<group>";
+		};
+		F45B5512186FA30F00392AC2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F4EFC85B18C141E800E64EAC /* G9ModuleCollectionViewItem.h */,
+				F4EFC85C18C141E800E64EAC /* G9ModuleCollectionViewItem.m */,
+				F45B5513186FA34800392AC2 /* G9ModuleView.h */,
+				F45B5514186FA34800392AC2 /* G9ModuleView.m */,
+				F4C0730A18C22FF900BEA5E2 /* G9GenericModuleView.h */,
+				F4C0730B18C22FF900BEA5E2 /* G9GenericModuleView.m */,
+				F41611B518C3D440009D7125 /* G9EqModuleView.h */,
+				F41611B618C3D440009D7125 /* G9EqModuleView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		F46DB90818C64824001BF693 /* Value Transformers */ = {
+			isa = PBXGroup;
+			children = (
+				F46DB90918C64862001BF693 /* G9NumberStringTransformer.h */,
+				F46DB90A18C64862001BF693 /* G9NumberStringTransformer.m */,
+			);
+			name = "Value Transformers";
+			sourceTree = "<group>";
+		};
+		F4D4FAAB18C791120025F00E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F45B550C186F933800392AC2 /* G9PatchArrayController.h */,
+				F45B550D186F933800392AC2 /* G9PatchArrayController.m */,
+				F4D4FAAC18C791420025F00E /* G9ModuleArrayController.h */,
+				F4D4FAAD18C791420025F00E /* G9ModuleArrayController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		F4EFC86018C1431000E64EAC /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				F45B54B11869D37600392AC2 /* MainMenu.xib */,
+				F45B54AE1869D37600392AC2 /* G9Document.xib */,
+				F41611B318C3D357009D7125 /* G9ModuleView.xib */,
+				F4EFC85E18C142E100E64EAC /* G9EqModuleView.xib */,
+				F42A073B18C2DE4B002D68C4 /* G9CompModuleView.xib */,
+				F42A073618C2D2BB002D68C4 /* G9WahModuleView.xib */,
+				F41611A918C37EC3009D7125 /* G9ZnrModuleView.xib */,
+				F41611AB18C37F4C009D7125 /* G9ModModuleView.xib */,
+				F41611B118C3CE94009D7125 /* G9AmpModuleView.xib */,
+				F41611AF18C380EB009D7125 /* G9DelayModuleView.xib */,
+				F41611AD18C37FDF009D7125 /* G9ReverbModuleView.xib */,
+			);
+			name = XIB;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F45B54951869D37600392AC2 /* G9 Control */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F45B54CD1869D37600392AC2 /* Build configuration list for PBXNativeTarget "G9 Control" */;
+			buildPhases = (
+				F45B54921869D37600392AC2 /* Sources */,
+				F45B54931869D37600392AC2 /* Frameworks */,
+				F45B54941869D37600392AC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "G9 Control";
+			productName = "G9 Control";
+			productReference = F45B54961869D37600392AC2 /* G9 Control.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F45B54BC1869D37600392AC2 /* G9 ControlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F45B54D01869D37600392AC2 /* Build configuration list for PBXNativeTarget "G9 ControlTests" */;
+			buildPhases = (
+				F45B54B91869D37600392AC2 /* Sources */,
+				F45B54BA1869D37600392AC2 /* Frameworks */,
+				F45B54BB1869D37600392AC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F45B54C21869D37600392AC2 /* PBXTargetDependency */,
+			);
+			name = "G9 ControlTests";
+			productName = "G9 ControlTests";
+			productReference = F45B54BD1869D37600392AC2 /* G9 ControlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F45B548E1869D37600392AC2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = G9;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Simon Biickert";
+				TargetAttributes = {
+					F45B54BC1869D37600392AC2 = {
+						TestTargetID = F45B54951869D37600392AC2;
+					};
+				};
+			};
+			buildConfigurationList = F45B54911869D37600392AC2 /* Build configuration list for PBXProject "G9 Control" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F45B548D1869D37600392AC2;
+			productRefGroup = F45B54971869D37600392AC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F45B54951869D37600392AC2 /* G9 Control */,
+				F45B54BC1869D37600392AC2 /* G9 ControlTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F45B54941869D37600392AC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F479EED6187DAFD00095CF77 /* 4x4_256.png in Resources */,
+				F4EFC85F18C142E100E64EAC /* G9EqModuleView.xib in Resources */,
+				F42A073718C2D2BB002D68C4 /* G9WahModuleView.xib in Resources */,
+				F42A073C18C2DE4B002D68C4 /* G9CompModuleView.xib in Resources */,
+				F45B54A41869D37600392AC2 /* InfoPlist.strings in Resources */,
+				F41611AA18C37EC3009D7125 /* G9ZnrModuleView.xib in Resources */,
+				F41611AC18C37F4C009D7125 /* G9ModModuleView.xib in Resources */,
+				F41611B018C380EB009D7125 /* G9DelayModuleView.xib in Resources */,
+				F45B54F61869D50800392AC2 /* Names.strings in Resources */,
+				F45B54B81869D37600392AC2 /* Images.xcassets in Resources */,
+				F45B54F51869D50800392AC2 /* Descriptions.strings in Resources */,
+				F45B54F91869D56400392AC2 /* Localizable.strings in Resources */,
+				F45B54B01869D37600392AC2 /* G9Document.xib in Resources */,
+				F45B54AA1869D37600392AC2 /* Credits.rtf in Resources */,
+				F45B54D81869D41200392AC2 /* FactoryPatches.xml in Resources */,
+				F41611B418C3D357009D7125 /* G9ModuleView.xib in Resources */,
+				F41611B218C3CE94009D7125 /* G9AmpModuleView.xib in Resources */,
+				F41611AE18C37FDF009D7125 /* G9ReverbModuleView.xib in Resources */,
+				F45B54B31869D37600392AC2 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F45B54BB1869D37600392AC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F45B54C81869D37600392AC2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F45B54921869D37600392AC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F43C4B01187857AE00CF785D /* G9Module.m in Sources */,
+				F45B55081869DC8A00392AC2 /* G9Patch+Access.m in Sources */,
+				F45B54EE1869D49B00392AC2 /* G9XexTranslator.m in Sources */,
+				F45B5515186FA34800392AC2 /* G9ModuleView.m in Sources */,
+				F45B54E91869D48B00392AC2 /* G9RangeDomain.m in Sources */,
+				F45B54AD1869D37600392AC2 /* G9Document.m in Sources */,
+				F45B54E21869D46A00392AC2 /* G9Setting.m in Sources */,
+				F4EFC85D18C141E800E64EAC /* G9ModuleCollectionViewItem.m in Sources */,
+				F4C0730C18C22FF900BEA5E2 /* G9GenericModuleView.m in Sources */,
+				F45B54EA1869D48B00392AC2 /* G9Value.m in Sources */,
+				F41611B718C3D440009D7125 /* G9EqModuleView.m in Sources */,
+				F45B54D61869D40300392AC2 /* GDataXMLNode.m in Sources */,
+				F45B54A61869D37600392AC2 /* main.m in Sources */,
+				F45B550E186F933800392AC2 /* G9PatchArrayController.m in Sources */,
+				F45B5511186F947500392AC2 /* G9Patch.m in Sources */,
+				F45B54B61869D37600392AC2 /* G9Document.xcdatamodeld in Sources */,
+				F45B54EB1869D48B00392AC2 /* G9ValueDomain.m in Sources */,
+				F4D4FAAE18C791420025F00E /* G9ModuleArrayController.m in Sources */,
+				F45B54DC1869D45900392AC2 /* G9ParameterInfo.m in Sources */,
+				F46DB90B18C64862001BF693 /* G9NumberStringTransformer.m in Sources */,
+				F45B55021869DC0900392AC2 /* G9PatchSet.m in Sources */,
+				F45B55051869DC7700392AC2 /* G9PatchSet+Access.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F45B54B91869D37600392AC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F45B54F11869D4CA00392AC2 /* G9ParameterInfoTestCase.m in Sources */,
+				F45B54F21869D4CA00392AC2 /* G9XexTranslatorTestCase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F45B54C21869D37600392AC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F45B54951869D37600392AC2 /* G9 Control */;
+			targetProxy = F45B54C11869D37600392AC2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F45B54A21869D37600392AC2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F45B54A31869D37600392AC2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F45B54A81869D37600392AC2 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F45B54A91869D37600392AC2 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		F45B54AE1869D37600392AC2 /* G9Document.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F45B54AF1869D37600392AC2 /* Base */,
+			);
+			name = G9Document.xib;
+			sourceTree = "<group>";
+		};
+		F45B54B11869D37600392AC2 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F45B54B21869D37600392AC2 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		F45B54C61869D37600392AC2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F45B54C71869D37600392AC2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F45B54CB1869D37600392AC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F45B54CC1869D37600392AC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F45B54CE1869D37600392AC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "G9 Control/G9 Control-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
+				INFOPLIST_FILE = "G9 Control/G9 Control-Info.plist";
+				OTHER_LDFLAGS = "-lxml2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F45B54CF1869D37600392AC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "G9 Control/G9 Control-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
+				INFOPLIST_FILE = "G9 Control/G9 Control-Info.plist";
+				OTHER_LDFLAGS = "-lxml2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F45B54D11869D37600392AC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/G9 Control.app/Contents/MacOS/G9 Control";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "G9 Control/G9 Control-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
+				INFOPLIST_FILE = "G9 ControlTests/G9 ControlTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-lxml2",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F45B54D21869D37600392AC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/G9 Control.app/Contents/MacOS/G9 Control";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "G9 Control/G9 Control-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
+				INFOPLIST_FILE = "G9 ControlTests/G9 ControlTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-lxml2",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F45B54911869D37600392AC2 /* Build configuration list for PBXProject "G9 Control" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F45B54CB1869D37600392AC2 /* Debug */,
+				F45B54CC1869D37600392AC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F45B54CD1869D37600392AC2 /* Build configuration list for PBXNativeTarget "G9 Control" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F45B54CE1869D37600392AC2 /* Debug */,
+				F45B54CF1869D37600392AC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F45B54D01869D37600392AC2 /* Build configuration list for PBXNativeTarget "G9 ControlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F45B54D11869D37600392AC2 /* Debug */,
+				F45B54D21869D37600392AC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F45B54B41869D37600392AC2 /* G9Document.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F45B54B51869D37600392AC2 /* G9Document.xcdatamodel */,
+			);
+			currentVersion = F45B54B51869D37600392AC2 /* G9Document.xcdatamodel */;
+			path = G9Document.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F45B548E1869D37600392AC2 /* Project object */;
+}
