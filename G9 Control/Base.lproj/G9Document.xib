@@ -16,7 +16,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" texturedBackground="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="133" y="235" width="1036" height="602"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1418"/>
             <value key="minSize" type="size" width="94" height="86"/>
             <view key="contentView" appearanceType="aqua" id="6">
                 <rect key="frame" x="0.0" y="0.0" width="1036" height="602"/>
@@ -41,7 +41,11 @@ If you use Cocoa bindings to manage the data, ...</string>
                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     </textFieldCell>
                                     <connections>
-                                        <binding destination="1Sf-UN-AQp" name="value" keyPath="selection.patchSet.comment" id="NGa-ar-Mfx"/>
+                                        <binding destination="1Sf-UN-AQp" name="value" keyPath="selection.patchSet.comment" id="N2F-rV-68U">
+                                            <dictionary key="options">
+                                                <string key="NSNullPlaceholder">Enter Patch Set Description</string>
+                                            </dictionary>
+                                        </binding>
                                     </connections>
                                 </textField>
                                 <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvX-Aa-vts">
@@ -214,7 +218,6 @@ If you use Cocoa bindings to manage the data, ...</string>
                             </segments>
                         </segmentedCell>
                         <connections>
-                            <action selector="changeChannel:" target="-2" id="3PV-8t-WRu"/>
                             <binding destination="1Sf-UN-AQp" name="selectedIndex" keyPath="selection.ampSelection" id="FGd-oO-KqN"/>
                         </connections>
                     </segmentedControl>
@@ -619,8 +622,8 @@ If you use Cocoa bindings to manage the data, ...</string>
                                     </popUpButtonCell>
                                     <connections>
                                         <binding destination="-2" name="content" keyPath="arrmSyncController.arrangedObjects" id="T7n-lD-1hB"/>
-                                        <binding destination="-2" name="contentObjects" keyPath="arrmSyncController.arrangedObjects.name" previousBinding="T7n-lD-1hB" id="nX7-He-ynT"/>
-                                        <binding destination="-2" name="contentValues" keyPath="arrmSyncController.arrangedObjects.value" previousBinding="nX7-He-ynT" id="UY5-eE-Wbl"/>
+                                        <binding destination="-2" name="contentObjects" keyPath="arrmSyncController.arrangedObjects.value" previousBinding="T7n-lD-1hB" id="gzG-eK-zsk"/>
+                                        <binding destination="-2" name="contentValues" keyPath="arrmSyncController.arrangedObjects.name" previousBinding="gzG-eK-zsk" id="c3Y-Vs-6a5"/>
                                     </connections>
                                 </popUpButton>
                                 <popUpButton appearanceType="aqua" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CRV-wm-b9x">
@@ -639,8 +642,8 @@ If you use Cocoa bindings to manage the data, ...</string>
                                     </popUpButtonCell>
                                     <connections>
                                         <binding destination="-2" name="content" keyPath="arrmWaveController.arrangedObjects" id="RMz-fe-yLE"/>
-                                        <binding destination="-2" name="contentObjects" keyPath="arrmWaveController.arrangedObjects.name" previousBinding="RMz-fe-yLE" id="2Vu-sf-b4I"/>
-                                        <binding destination="-2" name="contentValues" keyPath="arrmWaveController.arrangedObjects.value" previousBinding="2Vu-sf-b4I" id="HLk-hh-B1A"/>
+                                        <binding destination="-2" name="contentObjects" keyPath="arrmWaveController.arrangedObjects.value" previousBinding="RMz-fe-yLE" id="3aa-dg-ZHN"/>
+                                        <binding destination="-2" name="contentValues" keyPath="arrmWaveController.arrangedObjects.name" previousBinding="3aa-dg-ZHN" id="jd1-dl-Vak"/>
                                     </connections>
                                 </popUpButton>
                                 <stepper appearanceType="aqua" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q4N-8I-ujc">
