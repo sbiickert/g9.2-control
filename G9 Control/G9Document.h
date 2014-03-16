@@ -9,8 +9,14 @@
 #import <Cocoa/Cocoa.h>
 
 @class G9ModuleView;
+@class G9PatchArrayController;
 
 @interface G9Document : NSPersistentDocument
+
+@property (strong) IBOutlet G9PatchArrayController *patchSetArrayController;
+@property (weak) IBOutlet NSTextField *arrmMinimum;
+@property (weak) IBOutlet NSTextField *arrmMaximum;
+- (IBAction)arrmTargetChanged:(id)sender;
 
 @property (weak) IBOutlet NSCollectionView *collectionView;
 @property (retain, nonatomic) IBOutlet NSCollectionViewItem *collectionViewItem;

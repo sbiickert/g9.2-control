@@ -607,8 +607,8 @@
 "total.0.3" = "Function 2";
 "total.1" = "Name";
 
-"control.0" = "Not Assigned";
-"control.1" = "Volume";
+"control.0.1" = "Not Assigned";
+"control.0.2" = "Volume";
 
 "arrm" = "ARRM";
 

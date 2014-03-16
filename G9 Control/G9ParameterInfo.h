@@ -23,6 +23,7 @@
 #define MODULE_TOTAL		@"total"
 #define MODULE_PEDAL		@"pedal"
 #define MODULE_ARRM			@"arrm"
+#define MODULE_CONTROL		@"control" // for "not assigned" and "volume"
 
 #define COMP_COMPRESSOR		0
 #define COMP_RACK			1

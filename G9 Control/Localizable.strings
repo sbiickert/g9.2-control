@@ -8,3 +8,6 @@
 
 "ON" = "On";
 "OFF" = "Off";
+
+"maximum.value.is" = "Maximum: %ld";
+"minimum.value.is" = "Minimum: %ld";

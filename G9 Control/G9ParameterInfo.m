@@ -293,6 +293,19 @@
 		}
 	}
 	
+<<<<<<< HEAD
+	else if ([moduleName isEqualToString:MODULE_CONTROL])
+	{
+		if (parameter == 1) { // Not assigned
+			range = [[G9RangeDomain alloc] initWithMinimum:0 andMaximum:255];
+		}
+		else if (parameter == 2) { // Volume
+			range = [[G9RangeDomain alloc] initWithMinimum:0 andMaximum:100];
+		}
+	}
+	
+=======
+>>>>>>> FETCH_HEAD
 	else if ([moduleName isEqualToString:MODULE_ARRM])
 	{
 		if (parameter == 1) { // Target for ARRM
@@ -733,7 +746,7 @@
 {
 	static NSArray *keysByCTIndex;
 	if (!keysByCTIndex) {
-		keysByCTIndex = @[  @"control.0", @"control.1",
+		keysByCTIndex = @[  @"control.0.1", @"control.0.2",
 							@"wah.0.2", @"wah.0.3", @"wah.0.4", @"wah.1.2", @"wah.1.3",
 							@"wah.1.4", @"wah.2.3", @"wah.2.4", @"wah.3.1", @"wah.3.2",
 							@"wah.3.3", @"wah.3.4", @"wah.4.2", @"wah.4.4", @"wah.5.2",
