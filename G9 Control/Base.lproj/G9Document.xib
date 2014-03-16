@@ -44,7 +44,11 @@ If you use Cocoa bindings to manage the data, ...</string>
                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     </textFieldCell>
                                     <connections>
-                                        <binding destination="1Sf-UN-AQp" name="value" keyPath="selection.patchSet.comment" id="NGa-ar-Mfx"/>
+                                        <binding destination="1Sf-UN-AQp" name="value" keyPath="selection.patchSet.comment" id="N2F-rV-68U">
+                                            <dictionary key="options">
+                                                <string key="NSNullPlaceholder">Enter Patch Set Description</string>
+                                            </dictionary>
+                                        </binding>
                                     </connections>
                                 </textField>
                                 <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvX-Aa-vts">
@@ -217,7 +221,6 @@ If you use Cocoa bindings to manage the data, ...</string>
                             </segments>
                         </segmentedCell>
                         <connections>
-                            <action selector="changeChannel:" target="-2" id="3PV-8t-WRu"/>
                             <binding destination="1Sf-UN-AQp" name="selectedIndex" keyPath="selection.ampSelection" id="FGd-oO-KqN"/>
                         </connections>
                     </segmentedControl>
@@ -599,8 +602,13 @@ If you use Cocoa bindings to manage the data, ...</string>
                                     </popUpButtonCell>
                                     <connections>
                                         <binding destination="-2" name="content" keyPath="arrmSyncController.arrangedObjects" id="T7n-lD-1hB"/>
+<<<<<<< HEAD
                                         <binding destination="-2" name="contentObjects" keyPath="arrmSyncController.arrangedObjects.value" previousBinding="T7n-lD-1hB" id="1d0-ju-TBy"/>
                                         <binding destination="-2" name="contentValues" keyPath="arrmSyncController.arrangedObjects.name" previousBinding="1d0-ju-TBy" id="vbi-Lg-Xme"/>
+=======
+                                        <binding destination="-2" name="contentObjects" keyPath="arrmSyncController.arrangedObjects.value" previousBinding="T7n-lD-1hB" id="gzG-eK-zsk"/>
+                                        <binding destination="-2" name="contentValues" keyPath="arrmSyncController.arrangedObjects.name" previousBinding="gzG-eK-zsk" id="c3Y-Vs-6a5"/>
+>>>>>>> FETCH_HEAD
                                     </connections>
                                 </popUpButton>
                                 <popUpButton appearanceType="aqua" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CRV-wm-b9x">
@@ -619,8 +627,13 @@ If you use Cocoa bindings to manage the data, ...</string>
                                     </popUpButtonCell>
                                     <connections>
                                         <binding destination="-2" name="content" keyPath="arrmWaveController.arrangedObjects" id="RMz-fe-yLE"/>
+<<<<<<< HEAD
                                         <binding destination="-2" name="contentObjects" keyPath="arrmWaveController.arrangedObjects.value" previousBinding="RMz-fe-yLE" id="ICp-Iw-tFv"/>
                                         <binding destination="-2" name="contentValues" keyPath="arrmWaveController.arrangedObjects.name" previousBinding="ICp-Iw-tFv" id="W6K-8R-SgV"/>
+=======
+                                        <binding destination="-2" name="contentObjects" keyPath="arrmWaveController.arrangedObjects.value" previousBinding="RMz-fe-yLE" id="3aa-dg-ZHN"/>
+                                        <binding destination="-2" name="contentValues" keyPath="arrmWaveController.arrangedObjects.name" previousBinding="3aa-dg-ZHN" id="jd1-dl-Vak"/>
+>>>>>>> FETCH_HEAD
                                     </connections>
                                 </popUpButton>
                                 <textField appearanceType="aqua" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0OD-cZ-dIy">

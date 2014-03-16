@@ -293,6 +293,7 @@
 		}
 	}
 	
+<<<<<<< HEAD
 	else if ([moduleName isEqualToString:MODULE_CONTROL])
 	{
 		if (parameter == 1) { // Not assigned
@@ -303,6 +304,8 @@
 		}
 	}
 	
+=======
+>>>>>>> FETCH_HEAD
 	else if ([moduleName isEqualToString:MODULE_ARRM])
 	{
 		if (parameter == 1) { // Target for ARRM
