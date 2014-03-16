@@ -12,6 +12,11 @@
 #import "G9ParameterInfo.h"
 #import "G9ValueDomain.h"
 #import "G9Value.h"
+#import "G9PatchArrayController.h"
+#import "G9RangeNumberFormatter.h"
+#import "G9PatchSet+Access.h"
+#import "G9Patch+Access.h"
+#import "G9Setting.h"
 
 @implementation G9Document
 
@@ -85,10 +90,60 @@
 		[mArray addObject:@{@"name": value.label, @"value":[NSNumber numberWithUnsignedInteger:value.value]}];
 	}
 	self.arrmSyncController = [[NSArrayController alloc] initWithContent:[NSArray arrayWithArray:mArray]];
+	
+	// Listen for patch selection changes
+	[self.patchSetArrayController addObserver:self
+								   forKeyPath:@"selection"
+									  options:NSKeyValueObservingOptionNew
+									  context:NULL];
+}
+
+- (void) observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+	if ([keyPath isEqualToString:@"selection"])
+	{
+		// Selected patch has changed.
+		if (self.patchSetArrayController.selectedObjects.count > 0)
+		{
+			// Update the ARRM min, max formatters
+			G9Patch *selectedPatch = (G9Patch *)self.patchSetArrayController.selectedObjects[0];
+			[self updateRangeFormatters:selectedPatch];
+		}
+	}
+}
+
+- (void) updateRangeFormatters:(G9Patch *)patch
+{
+	[self updateArrmRangeFormatter:patch];
+}
+
+- (void) updateArrmRangeFormatter:(G9Patch *)patch
+{
+	NSUInteger controlTarget;
+	controlTarget = ((G9Setting *)patch.arrm).param1;
+	G9RangeNumberFormatter *arrmFormatter = [self rangeFormatterForPedalWithControlTargetIndex:controlTarget];
+	self.arrmMaximum.formatter = arrmFormatter;
+	self.arrmMinimum.formatter = arrmFormatter;
+	self.arrmMaximum.stringValue = [arrmFormatter correctedStringForInputString:self.arrmMaximum.stringValue];
+	self.arrmMinimum.stringValue = [arrmFormatter correctedStringForInputString:self.arrmMinimum.stringValue];
+	self.arrmMaximum.toolTip = [NSString stringWithFormat: NSLocalizedString(@"maximum.value.is", nil), arrmFormatter.integerMaximum];
+	self.arrmMinimum.toolTip = [NSString stringWithFormat: NSLocalizedString(@"minimum.value.is", nil), arrmFormatter.integerMinimum];
+}
+
+- (G9RangeNumberFormatter *) rangeFormatterForPedalWithControlTargetIndex:(NSUInteger)targetIndex
+{
+	G9RangeDomain *range = [G9ParameterInfo rangeForPedalWithControlTargetIndex:targetIndex];
+	G9RangeNumberFormatter *formatter = [[G9RangeNumberFormatter alloc] initWithMinimum:range.minimum andMaximum:range.maximum];
+	return formatter;
 }
 
 + (BOOL)autosavesInPlace
 {
     return YES;
+}
+
+- (IBAction)arrmTargetChanged:(id)sender {
+	G9Patch *selectedPatch = (G9Patch *)self.patchSetArrayController.selectedObjects[0];
+	[self updateArrmRangeFormatter:selectedPatch];
 }
 @end

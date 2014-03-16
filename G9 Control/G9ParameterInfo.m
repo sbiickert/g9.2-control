@@ -293,19 +293,13 @@
 		}
 	}
 	
-	else if ([[moduleName substringToIndex:5] isEqualToString:MODULE_PEDAL])
+	else if ([moduleName isEqualToString:MODULE_CONTROL])
 	{
-		if (parameter == 1) { // Target for expression pedal
-			range = [[G9RangeDomain alloc] initWithMinimum:CONTROL_NOT_ASSIGNED andMaximum:CONTROL_MAX];
+		if (parameter == 1) { // Not assigned
+			range = [[G9RangeDomain alloc] initWithMinimum:0 andMaximum:255];
 		}
-		else if (parameter == 2) { // Minimum value when pedal up
-			// Depends on the target
-		}
-		else if (parameter == 3) { // Maximum value when pedal down
-			// Depends on the target
-		}
-		else if (parameter == 4) { // Module on/off function
-			
+		else if (parameter == 2) { // Volume
+			range = [[G9RangeDomain alloc] initWithMinimum:0 andMaximum:100];
 		}
 	}
 	
@@ -340,6 +334,22 @@
 				[syncDomain addValue:[[G9Value alloc] initWithValue:i andLabel:[NSString stringWithFormat:@"1/4 x %ld", i]]];
 			}
 			range = syncDomain;
+		}
+	}
+	
+	else if ([[moduleName substringToIndex:5] isEqualToString:MODULE_PEDAL])
+	{
+		if (parameter == 1) { // Target for expression pedal
+			range = [[G9RangeDomain alloc] initWithMinimum:CONTROL_NOT_ASSIGNED andMaximum:CONTROL_MAX];
+		}
+		else if (parameter == 2) { // Minimum value when pedal up
+			// Depends on the target
+		}
+		else if (parameter == 3) { // Maximum value when pedal down
+			// Depends on the target
+		}
+		else if (parameter == 4) { // Module on/off function
+			
 		}
 	}
 	
@@ -733,7 +743,7 @@
 {
 	static NSArray *keysByCTIndex;
 	if (!keysByCTIndex) {
-		keysByCTIndex = @[  @"control.0", @"control.1",
+		keysByCTIndex = @[  @"control.0.1", @"control.0.2",
 							@"wah.0.2", @"wah.0.3", @"wah.0.4", @"wah.1.2", @"wah.1.3",
 							@"wah.1.4", @"wah.2.3", @"wah.2.4", @"wah.3.1", @"wah.3.2",
 							@"wah.3.3", @"wah.3.4", @"wah.4.2", @"wah.4.4", @"wah.5.2",

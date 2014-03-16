@@ -6,8 +6,11 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="G9Document">
             <connections>
+                <outlet property="arrmMaximum" destination="Leg-ty-I15" id="2dV-ZK-1qw"/>
+                <outlet property="arrmMinimum" destination="0OD-cZ-dIy" id="3SZ-3b-SOP"/>
                 <outlet property="collectionView" destination="7TO-gu-OKL" id="RJx-cS-2Nj"/>
                 <outlet property="collectionViewItem" destination="5TN-hF-1AZ" id="1nP-xU-B53"/>
+                <outlet property="patchSetArrayController" destination="1Sf-UN-AQp" id="g9f-eR-VyZ"/>
                 <outlet property="window" destination="5" id="18"/>
             </connections>
         </customObject>
@@ -16,7 +19,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" texturedBackground="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="133" y="235" width="1036" height="602"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1418"/>
             <value key="minSize" type="size" width="94" height="86"/>
             <view key="contentView" appearanceType="aqua" id="6">
                 <rect key="frame" x="0.0" y="0.0" width="1036" height="602"/>
@@ -568,40 +571,17 @@ If you use Cocoa bindings to manage the data, ...</string>
                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                     </textFieldCell>
                                 </textField>
-                                <popUpButton appearanceType="aqua" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X1N-p4-nCw">
-                                    <rect key="frame" x="16" y="68" width="318" height="26"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                    <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="v4D-vh-3Fh" id="KPy-C1-KwX">
-                                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                                        <font key="font" metaFont="menu"/>
-                                        <menu key="menu" title="OtherViews" id="Csu-5o-Bds">
-                                            <items>
-                                                <menuItem title="Item 1" state="on" id="v4D-vh-3Fh"/>
-                                                <menuItem title="Item 2" id="56U-kb-CGE"/>
-                                                <menuItem title="Item 3" id="ee8-CV-cVi"/>
-                                            </items>
-                                        </menu>
-                                    </popUpButtonCell>
-                                    <connections>
-                                        <binding destination="-2" name="content" keyPath="arrmTargetsController.arrangedObjects" id="i6x-pE-Qp2"/>
-                                        <binding destination="-2" name="contentValues" keyPath="arrmTargetsController.arrangedObjects.name" previousBinding="Up3-x5-Lt4" id="JQm-bB-Wza"/>
-                                        <binding destination="-2" name="contentObjects" keyPath="arrmTargetsController.arrangedObjects.value" previousBinding="i6x-pE-Qp2" id="Up3-x5-Lt4"/>
-                                        <binding destination="1Sf-UN-AQp" name="selectedIndex" keyPath="selection.arrm.param1" previousBinding="JQm-bB-Wza" id="fda-kz-Vf5"/>
-                                    </connections>
-                                </popUpButton>
-                                <stepper appearanceType="aqua" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sLJ-8H-S8b">
-                                    <rect key="frame" x="315" y="9" width="19" height="27"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                    <stepperCell key="cell" continuous="YES" alignment="left" maxValue="100" id="eLb-I3-iEe"/>
-                                </stepper>
                                 <textField appearanceType="aqua" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Leg-ty-I15">
-                                    <rect key="frame" x="236" y="13" width="82" height="22"/>
+                                    <rect key="frame" x="236" y="13" width="95" height="22"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="7mB-rU-pRR">
                                         <font key="font" metaFont="system"/>
                                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     </textFieldCell>
+                                    <connections>
+                                        <binding destination="1Sf-UN-AQp" name="value" keyPath="selection.arrm.param3" id="3cH-yE-L3g"/>
+                                    </connections>
                                 </textField>
                                 <popUpButton appearanceType="aqua" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LHv-P8-jJw">
                                     <rect key="frame" x="234" y="38" width="100" height="26"/>
@@ -619,8 +599,8 @@ If you use Cocoa bindings to manage the data, ...</string>
                                     </popUpButtonCell>
                                     <connections>
                                         <binding destination="-2" name="content" keyPath="arrmSyncController.arrangedObjects" id="T7n-lD-1hB"/>
-                                        <binding destination="-2" name="contentObjects" keyPath="arrmSyncController.arrangedObjects.name" previousBinding="T7n-lD-1hB" id="nX7-He-ynT"/>
-                                        <binding destination="-2" name="contentValues" keyPath="arrmSyncController.arrangedObjects.value" previousBinding="nX7-He-ynT" id="UY5-eE-Wbl"/>
+                                        <binding destination="-2" name="contentObjects" keyPath="arrmSyncController.arrangedObjects.value" previousBinding="T7n-lD-1hB" id="1d0-ju-TBy"/>
+                                        <binding destination="-2" name="contentValues" keyPath="arrmSyncController.arrangedObjects.name" previousBinding="1d0-ju-TBy" id="vbi-Lg-Xme"/>
                                     </connections>
                                 </popUpButton>
                                 <popUpButton appearanceType="aqua" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CRV-wm-b9x">
@@ -639,24 +619,44 @@ If you use Cocoa bindings to manage the data, ...</string>
                                     </popUpButtonCell>
                                     <connections>
                                         <binding destination="-2" name="content" keyPath="arrmWaveController.arrangedObjects" id="RMz-fe-yLE"/>
-                                        <binding destination="-2" name="contentObjects" keyPath="arrmWaveController.arrangedObjects.name" previousBinding="RMz-fe-yLE" id="2Vu-sf-b4I"/>
-                                        <binding destination="-2" name="contentValues" keyPath="arrmWaveController.arrangedObjects.value" previousBinding="2Vu-sf-b4I" id="HLk-hh-B1A"/>
+                                        <binding destination="-2" name="contentObjects" keyPath="arrmWaveController.arrangedObjects.value" previousBinding="RMz-fe-yLE" id="ICp-Iw-tFv"/>
+                                        <binding destination="-2" name="contentValues" keyPath="arrmWaveController.arrangedObjects.name" previousBinding="ICp-Iw-tFv" id="W6K-8R-SgV"/>
                                     </connections>
                                 </popUpButton>
-                                <stepper appearanceType="aqua" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q4N-8I-ujc">
-                                    <rect key="frame" x="138" y="10" width="19" height="27"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                    <stepperCell key="cell" continuous="YES" alignment="left" maxValue="100" id="8gc-BQ-DhZ"/>
-                                </stepper>
                                 <textField appearanceType="aqua" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0OD-cZ-dIy">
-                                    <rect key="frame" x="59" y="13" width="83" height="22"/>
+                                    <rect key="frame" x="59" y="13" width="95" height="22"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="3kf-x2-Koa">
                                         <font key="font" metaFont="system"/>
                                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     </textFieldCell>
+                                    <connections>
+                                        <binding destination="1Sf-UN-AQp" name="value" keyPath="selection.arrm.param2" id="H9H-hL-m7F"/>
+                                    </connections>
                                 </textField>
+                                <popUpButton appearanceType="aqua" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X1N-p4-nCw">
+                                    <rect key="frame" x="16" y="69" width="318" height="26"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="v4D-vh-3Fh" id="KPy-C1-KwX">
+                                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                        <font key="font" metaFont="menu"/>
+                                        <menu key="menu" title="OtherViews" id="Csu-5o-Bds">
+                                            <items>
+                                                <menuItem title="Item 1" state="on" id="v4D-vh-3Fh"/>
+                                                <menuItem title="Item 2" id="56U-kb-CGE"/>
+                                                <menuItem title="Item 3" id="ee8-CV-cVi"/>
+                                            </items>
+                                        </menu>
+                                    </popUpButtonCell>
+                                    <connections>
+                                        <action selector="arrmTargetChanged:" target="-2" id="kj5-H1-h7r"/>
+                                        <binding destination="-2" name="content" keyPath="arrmTargetsController.arrangedObjects" id="i6x-pE-Qp2"/>
+                                        <binding destination="-2" name="contentValues" keyPath="arrmTargetsController.arrangedObjects.name" previousBinding="Up3-x5-Lt4" id="JQm-bB-Wza"/>
+                                        <binding destination="-2" name="contentObjects" keyPath="arrmTargetsController.arrangedObjects.value" previousBinding="i6x-pE-Qp2" id="Up3-x5-Lt4"/>
+                                        <binding destination="1Sf-UN-AQp" name="selectedIndex" keyPath="selection.arrm.param1" previousBinding="JQm-bB-Wza" id="fda-kz-Vf5"/>
+                                    </connections>
+                                </popUpButton>
                             </subviews>
                         </view>
                         <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>

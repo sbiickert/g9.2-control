@@ -606,8 +606,8 @@
 "total.0.3" = "Selects the action of function foot switch 2.";
 "total.1" = "Sets name of the patch.";
 
-"control.0" = "Not Assigned";
-"control.1" = "Volume";
+"control.0.1" = "Not Assigned";
+"control.0.2" = "Volume";
 
 "arrm" = "Auto-Repeat Real-time Modulation";
 "arrm.0" = "Auto-Repeat Real-time Modulation";

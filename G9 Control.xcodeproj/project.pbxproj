@@ -50,6 +50,7 @@
 		F45B5515186FA34800392AC2 /* G9ModuleView.m in Sources */ = {isa = PBXBuildFile; fileRef = F45B5514186FA34800392AC2 /* G9ModuleView.m */; };
 		F46DB90B18C64862001BF693 /* G9NumberStringTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = F46DB90A18C64862001BF693 /* G9NumberStringTransformer.m */; };
 		F479EED6187DAFD00095CF77 /* 4x4_256.png in Resources */ = {isa = PBXBuildFile; fileRef = F479EED5187DAFD00095CF77 /* 4x4_256.png */; };
+		F48C24A918D5CACA00888772 /* G9RangeNumberFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = F48C24A818D5CACA00888772 /* G9RangeNumberFormatter.m */; };
 		F4C0730C18C22FF900BEA5E2 /* G9GenericModuleView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C0730B18C22FF900BEA5E2 /* G9GenericModuleView.m */; };
 		F4D4FAAE18C791420025F00E /* G9ModuleArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D4FAAD18C791420025F00E /* G9ModuleArrayController.m */; };
 		F4EFC85D18C141E800E64EAC /* G9ModuleCollectionViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EFC85C18C141E800E64EAC /* G9ModuleCollectionViewItem.m */; };
@@ -134,6 +135,8 @@
 		F46DB90918C64862001BF693 /* G9NumberStringTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G9NumberStringTransformer.h; sourceTree = "<group>"; };
 		F46DB90A18C64862001BF693 /* G9NumberStringTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G9NumberStringTransformer.m; sourceTree = "<group>"; };
 		F479EED5187DAFD00095CF77 /* 4x4_256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4x4_256.png; sourceTree = "<group>"; };
+		F48C24A718D5CACA00888772 /* G9RangeNumberFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G9RangeNumberFormatter.h; sourceTree = "<group>"; };
+		F48C24A818D5CACA00888772 /* G9RangeNumberFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G9RangeNumberFormatter.m; sourceTree = "<group>"; };
 		F4C0730A18C22FF900BEA5E2 /* G9GenericModuleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G9GenericModuleView.h; sourceTree = "<group>"; };
 		F4C0730B18C22FF900BEA5E2 /* G9GenericModuleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G9GenericModuleView.m; sourceTree = "<group>"; };
 		F4D4FAAC18C791420025F00E /* G9ModuleArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G9ModuleArrayController.h; sourceTree = "<group>"; };
@@ -207,6 +210,7 @@
 		F45B549F1869D37600392AC2 /* G9 Control */ = {
 			isa = PBXGroup;
 			children = (
+				F48C24A618D5CAB200888772 /* Formatters */,
 				F46DB90818C64824001BF693 /* Value Transformers */,
 				F4EFC86018C1431000E64EAC /* XIB */,
 				F45B5512186FA30F00392AC2 /* Views */,
@@ -325,6 +329,15 @@
 				F46DB90A18C64862001BF693 /* G9NumberStringTransformer.m */,
 			);
 			name = "Value Transformers";
+			sourceTree = "<group>";
+		};
+		F48C24A618D5CAB200888772 /* Formatters */ = {
+			isa = PBXGroup;
+			children = (
+				F48C24A718D5CACA00888772 /* G9RangeNumberFormatter.h */,
+				F48C24A818D5CACA00888772 /* G9RangeNumberFormatter.m */,
+			);
+			name = Formatters;
 			sourceTree = "<group>";
 		};
 		F4D4FAAB18C791120025F00E /* Controllers */ = {
@@ -481,6 +494,7 @@
 				F4C0730C18C22FF900BEA5E2 /* G9GenericModuleView.m in Sources */,
 				F45B54EA1869D48B00392AC2 /* G9Value.m in Sources */,
 				F41611B718C3D440009D7125 /* G9EqModuleView.m in Sources */,
+				F48C24A918D5CACA00888772 /* G9RangeNumberFormatter.m in Sources */,
 				F45B54D61869D40300392AC2 /* GDataXMLNode.m in Sources */,
 				F45B54A61869D37600392AC2 /* main.m in Sources */,
 				F45B550E186F933800392AC2 /* G9PatchArrayController.m in Sources */,
